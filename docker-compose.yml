@@ -4,9 +4,9 @@ services:
     image: nginx:latest
     container_name: "normaled_app"
     environment:    
-        VIRTUAL_HOST
-        LETSENCRYPT_HOST
-        LETSENCRYPT_EMAIL
+      - VIRTUAL_HOST
+      - LETSENCRYPT_HOST
+      - LETSENCRYPT_EMAIL
     restart: always
     volumes:
       - ./webpack/nginx/app:/app
