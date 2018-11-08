@@ -2,7 +2,6 @@ import ThreeScene from "./ThreeScene"
 import { convertToNormalMap, initCanvas, shrinkSize, getCanvas } from "./image.js"
 import { loadImage, readFile } from "./promise.js"
 import sampletex from "../images/sampletex.jpg"
-import "../images/white0023.png"
 import "../styles/index.css"
 import $ from "jquery"
 
