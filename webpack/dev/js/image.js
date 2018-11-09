@@ -91,12 +91,12 @@ export function initCanvas(id, w, h) {
 
 export function shrinkSize(w, h, canvasWidth, canvasHeight) {
     let rate = 1;
-    if (w > canvasWidth) {
+    if (canvasWidth > canvasHeight) {
         rate = canvasWidth / w;
-    } else if (h > canvasHeight) {
+    } else {
         rate = canvasHeight / h;
     }
-
+    
     return {
         width: w * rate,
         height: h * rate,
