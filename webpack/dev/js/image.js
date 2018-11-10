@@ -96,6 +96,12 @@ export function shrinkSize(w, h, canvasWidth, canvasHeight) {
     } else {
         rate = canvasHeight / h;
     }
+
+    console.log("canvasWidth:" + canvasWidth);
+    console.log("canvasHeight:" + canvasHeight);
+    console.log("w:" + w);
+    console.log("h:" + h);
+    console.log("rate:" + rate);
     
     return {
         width: w * rate,
