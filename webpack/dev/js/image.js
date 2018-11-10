@@ -91,17 +91,11 @@ export function initCanvas(id, w, h) {
 
 export function shrinkSize(w, h, canvasWidth, canvasHeight) {
     let rate = 1;
-    if (canvasWidth > canvasHeight) {
+    if (w > h) {
         rate = canvasWidth / w;
     } else {
         rate = canvasHeight / h;
     }
-
-    console.log("canvasWidth:" + canvasWidth);
-    console.log("canvasHeight:" + canvasHeight);
-    console.log("w:" + w);
-    console.log("h:" + h);
-    console.log("rate:" + rate);
     
     return {
         width: w * rate,
